@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ view_title }}{% endblock %}
+
+    {% block body %}
+
+
+
+
+        <div>
+            <div style="max-width: 100vh;max-height: 100vh">
+                <h2>Chart one</h2>
+                {{ render_chart(barChart) }}
+            </div>
+            <div style="max-width: 50vh;max-height: 50vh">
+                <h2>Chart Two</h2>
+                {{ render_chart(pieChart) }}
+            </div>
+        </div>
+
+
+
+
+    {% endblock %}
+
+
